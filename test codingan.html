@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="test codingan.css" />
+    <title>test codingan</title>
+  </head>
+  <body>
+    <div class="ui">
+      <div class="card glassy">
+        <p class="eyebrow">Mini party mode</p>
+        <h1>Selamat ulang tahun!</h1>
+        <p class="lead">
+          Klik tombol di bawah atau ketik pesanmu biar kembang api & balon ikut
+          merayakan.
+        </p>
+        <form id="messageForm" class="controls">
+          <label>
+            Nama / baris 3
+            <input
+              id="nameInput"
+              type="text"
+              maxlength="12"
+              placeholder="Ardi"
+              autocomplete="off"
+            />
+          </label>
+          <label>
+            Baris 1
+            <input
+              id="line1Input"
+              type="text"
+              maxlength="16"
+              placeholder="HAPPY"
+              autocomplete="off"
+            />
+          </label>
+          <label>
+            Baris 2
+            <input
+              id="line2Input"
+              type="text"
+              maxlength="16"
+              placeholder="BIRTHDAY!"
+              autocomplete="off"
+            />
+          </label>
+          <div class="actions">
+            <button type="submit">Ganti teks</button>
+            <button type="button" id="replayBtn">Mulai lagi</button>
+          </div>
+        </form>
+        <p class="hint">
+          Tips: klik bebas di area gelap buat nambah ledakan lucu 🤩
+        </p>
+        <ul class="shortcuts">
+          <li>Drag di kanvas: gambar konfeti pelangi</li>
+          <li>Double click: mega burst</li>
+          <li>Spasi: pesta tengah layar</li>
+          <li>P: party random</li>
+          <li>C: hidup/matikan hujan konfeti</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="floaters">
+      <span>🎈</span>
+      <span>🎉</span>
+      <span>✨</span>
+      <span>🪩</span>
+      <span>🎂</span>
+    </div>
+
+    <div class="confetti-toggle" id="confettiStatus">Confetti: ON</div>
+
+    <!-- Canvas utama -->
+    <canvas id="c"></canvas>
+    <script src="test codingan.js"></script>
+  </body>
+</html>
